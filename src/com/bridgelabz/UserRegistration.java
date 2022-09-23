@@ -13,4 +13,3 @@ public class UserRegistration {
         return firstName.matches("[A-Z][a-z]{3,}");
     }
 }
-
