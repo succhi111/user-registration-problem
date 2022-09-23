@@ -5,6 +5,7 @@ public class UserRegistration {
         System.out.println(firstName("Suchendra"));
         System.out.println(lastName("Mishra"));
         System.out.println(email("suchendramishra396@gmail.com"));
+        System.out.println(mobile("91 7209439312"));
     }
 
     /*
@@ -27,5 +28,12 @@ public class UserRegistration {
     public static boolean email(String email) {
 
         return email.matches("[a-zA-Z0-9]+[@][a-zA-Z]{3,15}[.][a-zA-Z]{2,5}");
+    }
+    /*
+    validate the mobile number
+    */
+    public static boolean mobile(String mobile){
+
+        return mobile.matches("91{1}" + "\s" + "[0-9]{10}");
     }
 }
