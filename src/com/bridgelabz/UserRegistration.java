@@ -6,6 +6,7 @@ public class UserRegistration {
         System.out.println(lastName("Mishra"));
         System.out.println(email("suchendramishra396@gmail.com"));
         System.out.println(mobile("91 7209439312"));
+        System.out.println(password("mypassword123"));
     }
 
     /*
@@ -15,6 +16,7 @@ public class UserRegistration {
 
         return firstName.matches("[A-Z][a-z]{3,}");
     }
+
     /*
  validate last name with 1st letter capital and at least 3 words
  */
@@ -22,6 +24,7 @@ public class UserRegistration {
 
         return lastName.matches("[A-Z][a-z]{3,}");
     }
+
     /*
       validate the email address
       */
@@ -29,11 +32,20 @@ public class UserRegistration {
 
         return email.matches("[a-zA-Z0-9]+[@][a-zA-Z]{3,15}[.][a-zA-Z]{2,5}");
     }
+
     /*
     validate the mobile number
     */
-    public static boolean mobile(String mobile){
+    public static boolean mobile(String mobile) {
 
         return mobile.matches("91{1}" + "\s" + "[0-9]{10}");
+    }
+
+    /*
+       validate the mobile number
+       */
+    public static boolean password(String password) {
+
+        return password.matches("[A-Za-z0-9]{8,}");
     }
 }
