@@ -6,14 +6,13 @@ public class UserRegistration {
         System.out.println(lastName("Mishra"));
         System.out.println(email("suchendramishra396@gmail.com"));
         System.out.println(mobile("91 7209439312"));
-        System.out.println(password("mypassword123"));
+        System.out.println(password("Mypassword123"));
     }
 
     /*
      validate first name with 1st letter capital and at least 3 words
      */
     public static boolean firstName(String firstName) {
-
         return firstName.matches("[A-Z][a-z]{3,}");
     }
 
@@ -21,7 +20,6 @@ public class UserRegistration {
  validate last name with 1st letter capital and at least 3 words
  */
     public static boolean lastName(String lastName) {
-
         return lastName.matches("[A-Z][a-z]{3,}");
     }
 
@@ -29,7 +27,6 @@ public class UserRegistration {
       validate the email address
       */
     public static boolean email(String email) {
-
         return email.matches("[a-zA-Z0-9]+[@][a-zA-Z]{3,15}[.][a-zA-Z]{2,5}");
     }
 
@@ -37,15 +34,13 @@ public class UserRegistration {
     validate the mobile number
     */
     public static boolean mobile(String mobile) {
-
         return mobile.matches("91{1}" + "\s" + "[0-9]{10}");
     }
 
     /*
-       validate the password of minimum 8 character
+       validate the password of minimum 8 character  and 1 uppercase
        */
     public static boolean password(String password) {
-
-        return password.matches("[A-Za-z0-9]{8,}");
+        return password.matches("^[A-Z]{1}[a-zA-Z0-9]{7,}$");
     }
 }
