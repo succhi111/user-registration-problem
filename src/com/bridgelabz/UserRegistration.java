@@ -42,7 +42,7 @@ public class UserRegistration {
     }
 
     /*
-       validate the mobile number
+       validate the password of minimum 8 character
        */
     public static boolean password(String password) {
 
