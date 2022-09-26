@@ -33,9 +33,10 @@ public class UserRegistration {
         return mobile.matches("91{1}" + "\s" + "[0-9]{10}");
     }
     /*
-       validate the password of minimum one numeric
+       validate the password of minimum one special character
        */
     public static boolean password(String password) {
-        return password.matches("(?=.*[A-Z])" + "(?=.*[0-9])" + ".{8,}");
+        return password.matches(("(?=.*[A-Z])" + "(?=.*[0-9])" + "(?=.*[@#$%^&+=])" + ".{8,}"));
+
     }
 }
