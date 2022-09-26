@@ -7,7 +7,6 @@ import java.util.regex.*;
 public class EmailRegex {
 
     public static void main(String[] args) {
-
         ArrayList<String> arrayList = new ArrayList<>();
 
         /*
@@ -48,7 +47,5 @@ applying the pattern to check whether the email matches the pattern or not
             }
 
         }
-
-
     }
 }
